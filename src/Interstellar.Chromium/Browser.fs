@@ -7,7 +7,7 @@ open Interstellar
 open CefSharp.Web
 open System.Text
 
-/// CefSharp has an IBrowser interface which doesn't express all the functionality we need, but the several implementations of it do.
+/// CefSharp has a IBrowser interface which doesn't express all the functionality we need, but the several implementations of it do.
 /// They actually each share a lot of duplicated methods and code which aren't in the interface for some reason. This record extracts
 /// those mostly identical methods into a single shared point so we can still avoid violating DRY all the time
 type SharedChromiumBrowserInternals = {
